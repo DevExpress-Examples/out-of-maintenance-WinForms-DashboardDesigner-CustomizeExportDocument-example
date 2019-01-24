@@ -5,10 +5,10 @@ Imports System.IO
 Imports System.Windows.Forms
 
 Namespace CustomExportDocumentExample
-	Partial Public Class Form1
-		Inherits Form
+    Partial Public Class Form1
+        Inherits DevExpress.XtraEditors.XtraForm
 
-		Public Sub New()
+        Public Sub New()
 			InitializeComponent()
 			dashboardDesigner1.CreateRibbon()
 			AddHandler dashboardDesigner1.ConfigureDataConnection, AddressOf DashboardDesigner1_ConfigureDataConnection
