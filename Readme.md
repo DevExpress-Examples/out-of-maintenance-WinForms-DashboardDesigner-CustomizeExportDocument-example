@@ -11,4 +11,4 @@ The  [DashboardDesigner.CustomizeExportDocument](https://docs.devexpress.com/Das
 In this example the [Workbook](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.Workbook) component loads the [Excel document](https://docs.devexpress.com/Dashboard/15181) for further processing. The resulting document includes a custom header and highlighted text.
 
 
-![screenshot](https://github.com/DevExpress-Examples/WinForms-DashboardDesigner-CustomizeExportDocument-example/blob/17.1.3%2B/images/screenshot.png)
+![screenshot](https://github.com/DevExpress-Examples/WinForms-DashboardDesigner-CustomizeExportDocument-example/blob/18.2.4%2B/images/screenshot.png)
