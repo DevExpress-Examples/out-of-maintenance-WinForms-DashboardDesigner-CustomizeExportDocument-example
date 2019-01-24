@@ -1,4 +1,4 @@
-﻿namespace DesignerSample
+﻿namespace CustomExportDocumentExample
 {
     partial class Form1
     {
@@ -49,7 +49,7 @@
             this.ClientSize = new System.Drawing.Size(1015, 529);
             this.Controls.Add(this.dashboardDesigner1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "CustomExportDocumentExample";
             this.ResumeLayout(false);
 
         }

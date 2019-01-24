@@ -1,19 +1,10 @@
 ﻿using DevExpress.DashboardCommon;
-using DevExpress.XtraPrinting;
 using DevExpress.Spreadsheet;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraBars;
-using DevExpress.XtraPrintingLinks;
 
-namespace DesignerSample
+namespace CustomExportDocumentExample
 {
     public partial class Form1 : Form
     {
@@ -21,10 +12,18 @@ namespace DesignerSample
         {
             InitializeComponent();
             dashboardDesigner1.CreateRibbon();
-            dashboardDesigner1.LoadDashboard(@"..\..\Data\dashboard1.xml");
-            
+            dashboardDesigner1.ConfigureDataConnection += DashboardDesigner1_ConfigureDataConnection;
+            dashboardDesigner1.LoadDashboard("Dashboard.xml");
+            dashboardDesigner1.ExportToExcel("test.xlsx");
+            System.Diagnostics.Process.Start("test.xlsx");
         }
 
+        private void DashboardDesigner1_ConfigureDataConnection(object sender, DashboardConfigureDataConnectionEventArgs e)
+        {
+            ExtractDataSourceConnectionParameters parameters = e.ConnectionParameters as ExtractDataSourceConnectionParameters;
+            if (parameters != null)
+                parameters.FileName = Path.GetFileName(parameters.FileName);
+        }
         private void dashboardDesigner1_CustomizeExportDocument(object sender, DevExpress.DashboardCommon.CustomizeExportDocumentEventArgs e)
         {
             if (e.ExportAction == DashboardExportAction.ExportToExcel)

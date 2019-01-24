@@ -3,11 +3,12 @@
 
 * [Form1.cs](./CS/DesignerSample/Form1.cs) (VB: [Form1.vb](./VB/DesignerSample/Form1.vb))
 <!-- default file list end -->
-# WinForms Dashboard - How to add custom information to the exported Excel document
+# How to add custom information to the exported Excel document
 
 
-The  <a href="https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardDesigner.CustomizeExportDocument">DashboardDesigner.CustomizeExportDocument</a> event allows you to obtain the stream of the exported document using the <a href="https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.CustomizeExportDocumentEventArgs.Stream">Stream</a> property and customize the document's layout according to your requirements. For instance, <a href="https://documentation.devexpress.com/#Dashboard/CustomDocument15181">Excel documents</a> may be loaded into the <a href="https://documentation.devexpress.com/#DocumentServer/clsDevExpressSpreadsheetWorkbooktopic">Workbook</a> component for further processing.<br>This example shows how to add a custom header to each sheet for the exported workbook.<br><br>
+The  [DashboardDesigner.CustomizeExportDocument](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardDesigner.CustomizeExportDocument) event allows you to obtain the exported document's stream (the [e.Stream](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.CustomizeExportDocumentEventArgs.Stream) property) and change the document's layout.
 
-<br/>
+In this example the [Workbook](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.Workbook) component loads the [Excel document](https://docs.devexpress.com/Dashboard/15181) for further processing. The resulting document includes a custom header and highlighted text.
 
 
+![screenshot](https://github.com/DevExpress-Examples/WinForms-DashboardDesigner-CustomizeExportDocument-example/blob/17.1.3%2B/images/screenshot.png)

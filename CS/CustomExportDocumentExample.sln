@@ -1,7 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignerSample", "DesignerSample\DesignerSample.csproj", "{0B92C5D0-3B78-485A-A570-2FDF89F15BB2}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExportDocumentExample", "CustomExportDocumentExample\CustomExportDocumentExample.csproj", "{0B92C5D0-3B78-485A-A570-2FDF89F15BB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
