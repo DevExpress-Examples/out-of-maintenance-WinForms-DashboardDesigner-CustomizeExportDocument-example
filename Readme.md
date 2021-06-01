@@ -1,7 +1,7 @@
 ﻿<!-- default file list -->
 *Files to look at*:
 
-* [Form1.cs](./CS/DesignerSample/Form1.cs) (VB: [Form1.vb](./VB/DesignerSample/Form1.vb))
+* [Form1.cs](./CS/CustomExportDocumentExample/Form1.cs) (VB: [Form1.vb](./VB/CustomExportDocumentExample/Form1.vb))
 <!-- default file list end -->
 # How to add custom information to the exported Excel document
 
@@ -12,3 +12,7 @@ In this example the [Workbook](https://docs.devexpress.com/OfficeFileAPI/DevExpr
 
 
 ![screenshot](https://github.com/DevExpress-Examples/WinForms-DashboardDesigner-CustomizeExportDocument-example/blob/18.2.4%2B/images/screenshot.png)
+
+## Documentation
+
+- [Printing and Exporting](https://docs.devexpress.com/Dashboard/15181/common-features/printing-and-exporting)
