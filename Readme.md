@@ -16,3 +16,6 @@ In this example the [Workbook](https://docs.devexpress.com/OfficeFileAPI/DevExpr
 ## Documentation
 
 - [Printing and Exporting](https://docs.devexpress.com/Dashboard/15181/common-features/printing-and-exporting)
+
+## More Examples
+- [Dashboard for WinForms - How to add custom information to the exported dashboard](https://supportcenter.devexpress.com/ticket/details/t466558)
